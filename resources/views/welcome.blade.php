@@ -7,9 +7,11 @@
   <style>
     .nav-link {
       cursor: pointer;
+      background-color: blue;
     }
     .submenu {
       padding-left: 1.5rem;
+     
     }
   </style>
 </head>
@@ -22,11 +24,18 @@
       <div class="list-group" id="menuAccordion">
         
         <!-- Main Item 1 -->
+        <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#submenu0" role="button" aria-expanded="false" aria-controls="submenu1">
+           Dashboard
+          </a>
+          <div class="collapse submenu p-0" id="submenu0" data-bs-parent="#menuAccordion">
+            <a href="#" class="list-group-item list-group-item-action list-group-item-info">All Informations</a>
+            <a href="#" class="list-group-item list-group-item-action">Students Information</a>
+          </div>
         <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#submenu1" role="button" aria-expanded="false" aria-controls="submenu1">
-          Main Item 1
+          Students
         </a>
-        <div class="collapse submenu" id="submenu1" data-bs-parent="#menuAccordion">
-          <a href="#" class="list-group-item list-group-item-action">Subitem 1.1</a>
+        <div class="collapse submenu p-0" id="submenu1" data-bs-parent="#menuAccordion">
+          <a href="#" class="list-group-item list-group-item-action ">Subitem 1.1</a>
           <a href="#" class="list-group-item list-group-item-action">Subitem 1.2</a>
         </div>
 
@@ -34,7 +43,7 @@
         <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#submenu2" role="button" aria-expanded="false" aria-controls="submenu2">
           Main Item 2
         </a>
-        <div class="collapse submenu" id="submenu2" data-bs-parent="#menuAccordion">
+        <div class="collapse submenu p-0" id="submenu2" data-bs-parent="#menuAccordion">
           <a href="#" class="list-group-item list-group-item-action">Subitem 2.1</a>
           <a href="#" class="list-group-item list-group-item-action">Subitem 2.2</a>
         </div>
@@ -43,7 +52,7 @@
         <a class="list-group-item list-group-item-action" data-bs-toggle="collapse" href="#submenu3" role="button" aria-expanded="false" aria-controls="submenu3">
           Main Item 3
         </a>
-        <div class="collapse submenu" id="submenu3" data-bs-parent="#menuAccordion">
+        <div class="collapse submenu p-0" id="submenu3" data-bs-parent="#menuAccordion">
           <a href="#" class="list-group-item list-group-item-action ">Subitem 3.1</a>
           <a href="#" class="list-group-item list-group-item-action">Subitem 3.2</a>
         </div>
